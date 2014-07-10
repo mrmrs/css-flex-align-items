@@ -6,8 +6,7 @@
   "keywords": [
     "css",
     "oocss",
-    "",
-    ""
+    "flex-align-items"
   ],
   "css-flex-align-items": {
     "type": "git",
