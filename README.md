@@ -26,7 +26,7 @@ or download the css on github and include in your project.
 .ai-s {  align-items: stretch; }
 .ai-i {  align-items: inherit; }
 
-@include break(not-small) {
+@media screen and (min-width: 48em) {
   .ai-fs-ns { align-items: flex-start; }
   .ai-fe-ns { align-items: flex-end; }
   .ai-c-ns {  align-items: center; }
@@ -35,7 +35,7 @@ or download the css on github and include in your project.
   .ai-i-ns {  align-items: inherit; }
 }
 
-@include break(medium) {
+@media screen and (min-width: 48em) and (max-width: 64em) {
   .ai-fs-m { align-items: flex-start; }
   .ai-fe-m { align-items: flex-end; }
   .ai-c-m {  align-items: center; }
@@ -44,7 +44,7 @@ or download the css on github and include in your project.
   .ai-i-m {  align-items: inherit; }
 }
 
-@include break(large) {
+@media screen and (min-width: 64em)  {
   .ai-fs-l { align-items: flex-start; }
   .ai-fe-l { align-items: flex-end; }
   .ai-c-l {  align-items: center; }
