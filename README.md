@@ -20,7 +20,8 @@ View on [npm](https://www.npmjs.org/package/css-flex-align-items)
 ## File Size
 
 1.0K flex-align-items.css
-824B flex-align-items.min.css
+824B flex-align-items.min.css 
+210B minified and gzipped
 
 ## The Code
 ```
