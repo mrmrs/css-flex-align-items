@@ -1,5 +1,6 @@
 {
   "name": "css-flex-align-items",
+  "style": "flex-align-items.css",
   "version": "0.0.5",
   "homepage": "http://github.com/mrmrs/css-flex-align-items",
   "description": "Css module of single purpose classes for flex align items",
