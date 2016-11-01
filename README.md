@@ -1,10 +1,10 @@
-# css-flex-align-items 0.0.7
+# css-flex-align-items 1.0.6
 
 Css module of single purpose classes for flex align items
 
 #### Stats
 
-256 | 24 | 24
+319 | 24 | 72
 ---|---|---
 bytes | selectors | declarations
 
@@ -16,15 +16,25 @@ bytes | selectors | declarations
 npm install --save-dev css-flex-align-items
 ```
 
+Learn more about using css installed with npm:
+* https://webpack.github.io/docs/stylesheets.html
+* https://github.com/defunctzombie/npm-css
+
 #### With Git
 
+http:
 ```
 git clone https://github.com/tachyons-css/css-flex-align-items
 ```
 
+ssh:
+```
+git clone git@github.com:tachyons-css/css-flex-align-items.git
+```
+
 ## Usage
 
-#### Using with [PostCSS](https://github.com/postcss/postcss)
+#### Using with [Postcss](https://github.com/postcss/postcss)
 
 Import the css module
 
@@ -32,16 +42,24 @@ Import the css module
 @import "css-flex-align-items";
 ```
 
-Then process the CSS using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
+Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
 
 ```sh
 $ npm i -g tachyons-cli
-$ tachyons-cli path/to/css-file.css > dist/t.css
+$ tachyons path/to/css-file.css > dist/t.css
 ```
 
-#### Using the CSS
+#### Using the css
 
-The built CSS is located in the `css` directory. It contains an unminified and minified version.
+##### CDN
+The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
+
+```
+<link rel="stylesheet" href="http://unpkg.com/css-flex-align-items@1.0.6/css/css-flex-align-items.min.css" />
+```
+
+##### Locally
+The built css is located in the `css` directory. It contains an unminified and minified version.
 You can either cut and paste that css or link to it directly in your html.
 
 ```html
@@ -50,44 +68,44 @@ You can either cut and paste that css or link to it directly in your html.
 
 #### Development
 
-The source CSS files can be found in the `src` directory.
-Running `$ npm start` will process the source CSS and place the built CSS in the `css` directory.
+The source css files can be found in the `src` directory.
+Running `$ npm start` will process the source css and place the built css in the `css` directory.
 
-## The CSS
+## The css
 
 ```css
 /*
    FLEX ALIGN ITEMS
 */
-.ai-fs { align-items: flex-start; }
-.ai-fe { align-items: flex-end; }
-.ai-c { align-items: center; }
-.ai-b { align-items: baseline; }
-.ai-s { align-items: stretch; }
-.ai-i { align-items: inherit; }
+.ai-fs { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+.ai-fe { -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+.ai-c { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+.ai-b { -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; }
+.ai-s { -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; }
+.ai-i { -webkit-box-align: inherit; -ms-flex-align: inherit; align-items: inherit; }
 @media screen and (min-width: 48em) {
- .ai-fs-ns { align-items: flex-start; }
- .ai-fe-ns { align-items: flex-end; }
- .ai-c-ns { align-items: center; }
- .ai-b-ns { align-items: baseline; }
- .ai-s-ns { align-items: stretch; }
- .ai-i-ns { align-items: inherit; }
+ .ai-fs-ns { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+ .ai-fe-ns { -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+ .ai-c-ns { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+ .ai-b-ns { -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; }
+ .ai-s-ns { -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; }
+ .ai-i-ns { -webkit-box-align: inherit; -ms-flex-align: inherit; align-items: inherit; }
 }
 @media screen and (min-width:48em) and (max-width: 64em) {
- .ai-fs-m { align-items: flex-start; }
- .ai-fe-m { align-items: flex-end; }
- .ai-c-m { align-items: center; }
- .ai-b-m { align-items: baseline; }
- .ai-s-m { align-items: stretch; }
- .ai-i-m { align-items: inherit; }
+ .ai-fs-m { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+ .ai-fe-m { -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+ .ai-c-m { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+ .ai-b-m { -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; }
+ .ai-s-m { -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; }
+ .ai-i-m { -webkit-box-align: inherit; -ms-flex-align: inherit; align-items: inherit; }
 }
 @media screen and (min-width: 64em) {
- .ai-fs-l { align-items: flex-start; }
- .ai-fe-l { align-items: flex-end; }
- .ai-c-l { align-items: center; }
- .ai-b-l { align-items: baseline; }
- .ai-s-l { align-items: stretch; }
- .ai-i-l { align-items: inherit; }
+ .ai-fs-l { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
+ .ai-fe-l { -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
+ .ai-c-l { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
+ .ai-b-l { -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; }
+ .ai-s-l { -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; }
+ .ai-i-l { -webkit-box-align: inherit; -ms-flex-align: inherit; align-items: inherit; }
 }
 ```
 
@@ -107,3 +125,4 @@ Running `$ npm start` will process the source CSS and place the built CSS in the
 ## License
 
 ISC
+
