@@ -9,7 +9,7 @@
 .ai-s {  align-items: stretch; }
 .ai-i {  align-items: inherit; }
 
-@media screen and (min-width: 48em) {
+@media screen and (min-width: 32em) {
   .ai-fs-s { align-items: flex-start; }
   .ai-fe-s { align-items: flex-end; }
   .ai-c-s {  align-items: center; }
@@ -18,7 +18,7 @@
   .ai-i-s {  align-items: inherit; }
 }
 
-@media screen and (min-width:48em) and (max-width: 64em) {
+@media screen and (min-width:48em) {
   .ai-fs-m { align-items: flex-start; }
   .ai-fe-m { align-items: flex-end; }
   .ai-c-m {  align-items: center; }
@@ -27,7 +27,7 @@
   .ai-i-m {  align-items: inherit; }
 }
 
-@media screen and (min-width: 64em) {
+@media screen and (min-width: 96em) {
   .ai-fs-l { align-items: flex-start; }
   .ai-fe-l { align-items: flex-end; }
   .ai-c-l {  align-items: center; }
