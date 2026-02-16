@@ -1,128 +1,92 @@
-# css-flex-align-items 1.0.6
+# css-flex-align-items
 
-Css module of single purpose classes for flex align items
+Functional CSS for flex-align-items
 
-#### Stats
+## Filesize
 
-319 | 24 | 72
----|---|---
-bytes | selectors | declarations
+| File | Size |
+|------|------|
+| `dist/flex-align-items.css` | 1305 bytes |
+| `dist/flex-align-items.min.css` | 967 bytes (204 Gzipped) |
 
-## Installation
+## Install
 
-#### With [npm](https://npmjs.com)
-
-```
-npm install --save-dev css-flex-align-items
-```
-
-Learn more about using css installed with npm:
-* https://webpack.github.io/docs/stylesheets.html
-* https://github.com/defunctzombie/npm-css
-
-#### With Git
-
-http:
-```
-git clone https://github.com/tachyons-css/css-flex-align-items
-```
-
-ssh:
-```
-git clone git@github.com:tachyons-css/css-flex-align-items.git
+```sh
+npm install css-flex-align-items
 ```
 
 ## Usage
 
-#### Using with [Postcss](https://github.com/postcss/postcss)
-
-Import the css module
+### Import
 
 ```css
 @import "css-flex-align-items";
 ```
 
-Then process the css using the [`tachyons-cli`](https://github.com/tachyons-css/tachyons-cli)
-
-```sh
-$ npm i -g tachyons-cli
-$ tachyons path/to/css-file.css > dist/t.css
-```
-
-#### Using the css
-
-##### CDN
-The easiest and most simple way to use the css is to use the cdn hosted version. Include it in the head of your html with:
-
-```
-<link rel="stylesheet" href="http://unpkg.com/css-flex-align-items@1.0.6/css/css-flex-align-items.min.css" />
-```
-
-##### Locally
-The built css is located in the `css` directory. It contains an unminified and minified version.
-You can either cut and paste that css or link to it directly in your html.
+### CDN
 
 ```html
-<link rel="stylesheet" href="path/to/module/css/css-flex-align-items">
+<link rel="stylesheet" href="https://unpkg.com/css-flex-align-items/dist/flex-align-items.min.css">
 ```
 
-#### Development
+### Direct
 
-The source css files can be found in the `src` directory.
-Running `$ npm start` will process the source css and place the built css in the `css` directory.
-
-## The css
-
-```css
-/*
-   FLEX ALIGN ITEMS
-*/
-.ai-fs { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
-.ai-fe { -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
-.ai-c { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
-.ai-b { -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; }
-.ai-s { -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; }
-.ai-i { -webkit-box-align: inherit; -ms-flex-align: inherit; align-items: inherit; }
-@media screen and (min-width: 48em) {
- .ai-fs-ns { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
- .ai-fe-ns { -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
- .ai-c-ns { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
- .ai-b-ns { -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; }
- .ai-s-ns { -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; }
- .ai-i-ns { -webkit-box-align: inherit; -ms-flex-align: inherit; align-items: inherit; }
-}
-@media screen and (min-width:48em) and (max-width: 64em) {
- .ai-fs-m { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
- .ai-fe-m { -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
- .ai-c-m { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
- .ai-b-m { -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; }
- .ai-s-m { -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; }
- .ai-i-m { -webkit-box-align: inherit; -ms-flex-align: inherit; align-items: inherit; }
-}
-@media screen and (min-width: 64em) {
- .ai-fs-l { -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; }
- .ai-fe-l { -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; }
- .ai-c-l { -webkit-box-align: center; -ms-flex-align: center; align-items: center; }
- .ai-b-l { -webkit-box-align: baseline; -ms-flex-align: baseline; align-items: baseline; }
- .ai-s-l { -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; }
- .ai-i-l { -webkit-box-align: inherit; -ms-flex-align: inherit; align-items: inherit; }
-}
+```html
+<link rel="stylesheet" href="path/to/css-flex-align-items/dist/flex-align-items.min.css">
 ```
 
-## Contributing
+## Classes
 
-1. Fork it
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+| Class   | Value                    |
+|---------|--------------------------|
+| `.align-start` | `align-items: flex-start;` |
+| `.align-end` | `align-items: flex-end;` |
+| `.align-center` | `align-items: center;` |
+| `.align-baseline` | `align-items: baseline;` |
+| `.align-stretch` | `align-items: stretch;` |
+| `.align-inherit` | `align-items: inherit;` |
+| `.align-start-s` | `align-items: flex-start;` |
+| `.align-end-s` | `align-items: flex-end;` |
+| `.align-center-s` | `align-items: center;` |
+| `.align-baseline-s` | `align-items: baseline;` |
+| `.align-stretch-s` | `align-items: stretch;` |
+| `.align-inherit-s` | `align-items: inherit;` |
+| `.align-start-m` | `align-items: flex-start;` |
+| `.align-end-m` | `align-items: flex-end;` |
+| `.align-center-m` | `align-items: center;` |
+| `.align-baseline-m` | `align-items: baseline;` |
+| `.align-stretch-m` | `align-items: stretch;` |
+| `.align-inherit-m` | `align-items: inherit;` |
+| `.align-start-l` | `align-items: flex-start;` |
+| `.align-end-l` | `align-items: flex-end;` |
+| `.align-center-l` | `align-items: center;` |
+| `.align-baseline-l` | `align-items: baseline;` |
+| `.align-stretch-l` | `align-items: stretch;` |
+| `.align-inherit-l` | `align-items: inherit;` |
 
-## Authors
+### Responsive
 
-* [mrmrs](http://mrmrs.io)
-* [johno](http://johnotander.com)
+Responsive variants are available for each class with the following suffixes:
+
+| Suffix | Media Query              |
+|--------|--------------------------|
+| `-s`   | `min-width: 32em`        |
+| `-m`   | `min-width: 48em`        |
+| `-l`   | `min-width: 96em`        |
+
+Example: `.align-start-m` applies the property at the medium breakpoint and above.
+
+## Building
+
+```sh
+npm run build
+```
+
+Processes `src/flex-align-items.css` with [Lightning CSS](https://lightningcss.dev) and outputs to `dist/`.
+
+- `dist/flex-align-items.css` — formatted
+- `dist/flex-align-items.min.css` — minified
 
 ## License
 
-ISC
-
+MIT
