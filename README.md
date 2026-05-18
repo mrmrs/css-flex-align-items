@@ -6,8 +6,8 @@ Functional CSS for flex-align-items
 
 | File | Size |
 |------|------|
-| `dist/flex-align-items.css` | 1305 bytes |
-| `dist/flex-align-items.min.css` | 967 bytes (204 Gzipped) |
+| `dist/flex-align-items.css` | 1121 bytes |
+| `dist/flex-align-items.min.css` | 783 bytes (195 Gzipped) |
 
 ## Install
 
@@ -39,30 +39,30 @@ npm install css-flex-align-items
 
 | Class   | Value                    |
 |---------|--------------------------|
-| `.align-start` | `align-items: flex-start;` |
-| `.align-end` | `align-items: flex-end;` |
-| `.align-center` | `align-items: center;` |
-| `.align-baseline` | `align-items: baseline;` |
-| `.align-stretch` | `align-items: stretch;` |
-| `.align-inherit` | `align-items: inherit;` |
-| `.align-start-s` | `align-items: flex-start;` |
-| `.align-end-s` | `align-items: flex-end;` |
-| `.align-center-s` | `align-items: center;` |
-| `.align-baseline-s` | `align-items: baseline;` |
-| `.align-stretch-s` | `align-items: stretch;` |
-| `.align-inherit-s` | `align-items: inherit;` |
-| `.align-start-m` | `align-items: flex-start;` |
-| `.align-end-m` | `align-items: flex-end;` |
-| `.align-center-m` | `align-items: center;` |
-| `.align-baseline-m` | `align-items: baseline;` |
-| `.align-stretch-m` | `align-items: stretch;` |
-| `.align-inherit-m` | `align-items: inherit;` |
-| `.align-start-l` | `align-items: flex-start;` |
-| `.align-end-l` | `align-items: flex-end;` |
-| `.align-center-l` | `align-items: center;` |
-| `.align-baseline-l` | `align-items: baseline;` |
-| `.align-stretch-l` | `align-items: stretch;` |
-| `.align-inherit-l` | `align-items: inherit;` |
+| `.ai-fs` | `align-items: flex-start;` |
+| `.ai-fe` | `align-items: flex-end;` |
+| `.ai-c` | `align-items: center;` |
+| `.ai-b` | `align-items: baseline;` |
+| `.ai-s` | `align-items: stretch;` |
+| `.ai-i` | `align-items: inherit;` |
+| `.ai-fs-s` | `align-items: flex-start;` |
+| `.ai-fe-s` | `align-items: flex-end;` |
+| `.ai-c-s` | `align-items: center;` |
+| `.ai-b-s` | `align-items: baseline;` |
+| `.ai-s-s` | `align-items: stretch;` |
+| `.ai-i-s` | `align-items: inherit;` |
+| `.ai-fs-m` | `align-items: flex-start;` |
+| `.ai-fe-m` | `align-items: flex-end;` |
+| `.ai-c-m` | `align-items: center;` |
+| `.ai-b-m` | `align-items: baseline;` |
+| `.ai-s-m` | `align-items: stretch;` |
+| `.ai-i-m` | `align-items: inherit;` |
+| `.ai-fs-l` | `align-items: flex-start;` |
+| `.ai-fe-l` | `align-items: flex-end;` |
+| `.ai-c-l` | `align-items: center;` |
+| `.ai-b-l` | `align-items: baseline;` |
+| `.ai-s-l` | `align-items: stretch;` |
+| `.ai-i-l` | `align-items: inherit;` |
 
 ### Responsive
 
@@ -74,7 +74,7 @@ Responsive variants are available for each class with the following suffixes:
 | `-m`   | `min-width: 48em`        |
 | `-l`   | `min-width: 96em`        |
 
-Example: `.align-start-m` applies the property at the medium breakpoint and above.
+Example: `.ai-fs-m` applies the property at the medium breakpoint and above.
 
 ## Building
 
